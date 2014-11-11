@@ -8,6 +8,8 @@ namespace Ajedrez
 {
     class Fichas
     {
+        #region Figuras 
+        //Crear clase figuras y guardar las figuras en esa clase
         public static string[] caballo = new string[4]{
                "  /)",
                "/º )",
@@ -45,5 +47,19 @@ namespace Ajedrez
                "(  )",
                "/__\\"
             };
+        #endregion
+
+        Color color;
+        string[,] contenido;
+        int x, y;
+
+        public Fichas(Color Color) 
+        {
+            /*this.color = Color;
+            contenido = peon;
+            x = 0;
+            y = 0;*/
+        }
     }
+
 }

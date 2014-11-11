@@ -13,6 +13,7 @@ namespace Ajedrez
         public Tablero()
         {
             CreaTablero();
+            ColocaFichas();
         }
 
         private void  CreaTablero()
@@ -98,6 +99,14 @@ namespace Ajedrez
                     }
                     Console.WriteLine();
                 }
+            }
+        }
+
+        private void ColocaFichas() 
+        {
+            for(int i=0 ; i<= 8; i++)
+            {
+                tablero[2, i].Contenido = Fichas.peon;
             }
         }
     }
